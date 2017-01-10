@@ -12,7 +12,7 @@
   const secretCode = 'bradley';
 
   window.addEventListener('keyup', function(e) {
-    let pressedFull = "";
+    let pressedFull;
     pressed.push(e.key);
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
     pressedFull = pressed.join('');
